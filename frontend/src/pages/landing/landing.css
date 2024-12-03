@@ -2,3 +2,33 @@
     margin: 0;
     padding: 0;
 }
+
+.landingPage{
+    width: 100vw;
+    display: flex;
+    
+}
+
+.landingPage .navBar{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: black;
+    width: 100vw;
+    opacity: 0.95;
+    height: 3rem;
+    & .image{    
+    margin-left: 1.5rem;   
+    margin-top: 0.5rem;
+     & .hbo{
+        height: 2rem;
+
+    }
+    }
+
+    & .translate {
+        & .translate{
+            background-color: white;
+        }
+    }
+}
