@@ -1,5 +1,6 @@
 import react from 'react'
 import './landing.css'
+import translation from '../../assets/translation.png'
 
 function Landing() {
 
@@ -12,9 +13,13 @@ function Landing() {
             <img src="https://www.max.com/img/max-h-w-l.svg" alt="hbo max image" className='hbo'/>
           </div>
           <div className="logar">
-            <div className="translate">
-              <img src="frontend\src\assets\translation.png" alt="asdsad" className='transtale'/>
-            </div>
+            <button className="translate">
+              <img src={translation} alt="asdsad" className='transtale'/>
+              <span className='translateText'>TRADUZIR</span>
+            </button>
+            <button>
+              <span className='translateText'>ENTRAR</span>
+            </button>
           </div>
         </nav>
       </div>
