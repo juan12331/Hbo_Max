@@ -7,15 +7,18 @@
     width: 100vw;
     display: flex;
     
+    
 }
 
 .landingPage .navBar{
+    justify-content: space-between;
+
     position: sticky;
     margin: 0;
-    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: flex;
     
-    justify-content: space-between;
     background-color: black;
     width: 100vw;
     filter: opacity(90%);
@@ -29,6 +32,9 @@
 
     }
     }
+    & .botoes{
+        display: flex;
+    }
 
     & .translate {
          /* user-select: none;  */
@@ -41,6 +47,10 @@
          padding: 0.2rem;
          margin-bottom: 0.25rem ;
          border-radius: 0.45rem;
+         margin-right: 1rem;
+         padding-left: 1rem;
+         padding-right: 1rem;
+
 
         & .transtale{
             border: none;
@@ -49,6 +59,7 @@
             color: white;
             filter: invert(100%);
             padding-right: 0.5rem;
+
         }
 
         & .translateText{
@@ -58,6 +69,30 @@
             font-weight: bold;
             font-size: 0.9rem;
         }
+    }
+
+    & .translateBlue{
+        background-color: #002BE7;
+         border: none;
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         margin-top: 0.25rem;
+         padding: 0.2rem;
+         margin-bottom: 0.25rem ;
+         border-radius: 0.45rem;
+         margin-right: 1rem;
+        padding: 1rem;
+
+        & .translateText{
+            color: white;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+    }
+
+    & .translateBlue:hover{
+        background-color: #0021B2;
     }
 
     & .translate:hover {
