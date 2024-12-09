@@ -1,3 +1,9 @@
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +11,7 @@
 
 .landingPage{
     width: 100vw;
-    
+    background-color: #002BE7;
     
 }
 
@@ -101,6 +107,53 @@
 }
 
 .landingPage .hero{
-   
+   border-bottom: 10rem;
+   height: 70vh;
+   width: 100%;
+   & .pretoEncima{
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0.09567577030812324) 100%);
+    height: 70vh;
+   width: 100%;
+   position: absolute;
+   border-radius: 0 0 20rem 20rem;
+   }
 
+   & .pretoEncima::after, .pretoEncima::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient( from var(--angle), #8202d8, #0021B2  );
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 0 0 20rem 20rem;
+    animation: 3s spin linear infinite;
+   }
+
+   & .pretoEncima::before{
+    filter: blur(3rem);
+    opacity: 0.75;
+   }
+
+   & img{
+         object-fit: cover;
+         width: 100%;
+         height: 100%;
+         z-index: -1;
+         border-radius: 0 0 20rem 20rem;
+         
+    }
+}
+
+@keyframes spin {
+    from{ 
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
 }

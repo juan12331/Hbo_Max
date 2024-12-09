@@ -32,7 +32,7 @@ function Landing() {
 
         <div className="hero">
           <div className="pretoEncima"></div>
-          <img src={films} alt="" />
+          <img src={films} alt="" className='films' />
         </div>
       </div>
     </>
