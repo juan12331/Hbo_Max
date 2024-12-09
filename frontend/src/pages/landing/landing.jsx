@@ -1,6 +1,7 @@
 import react from 'react'
 import './landing.css'
 import translation from '../../assets/translation.png'
+import films from '../../assets/filmes.jpg'
 
 function Landing() {
 
@@ -28,6 +29,11 @@ function Landing() {
             </button>
          </div>
         </nav>
+
+        <div className="hero">
+          <div className="pretoEncima"></div>
+          <img src={films} alt="" />
+        </div>
       </div>
     </>
   )
